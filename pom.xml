@@ -48,6 +48,7 @@
         <lombok.version>1.18.24</lombok.version>
         <auto-service.version>1.0.1</auto-service.version>
         <whatsit-core.version>1.0.20</whatsit-core.version>
+        <whatsit-service-discovery-ui.version>1.0.0</whatsit-service-discovery-ui.version>
     </properties>
 
     <dependencyManagement>
@@ -71,12 +72,17 @@
 
         <dependency>
             <groupId>io.vertx</groupId>
-            <artifactId>vertx-web-templ-thymeleaf</artifactId>
+            <artifactId>vertx-service-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-auth-jwt</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-service-discovery</artifactId>
+            <groupId>io.github.pangzixiang.whatsit.vertx</groupId>
+            <artifactId>whatsit-service-discovery-ui</artifactId>
+            <version>${whatsit-service-discovery-ui.version}</version>
         </dependency>
 
         <dependency>

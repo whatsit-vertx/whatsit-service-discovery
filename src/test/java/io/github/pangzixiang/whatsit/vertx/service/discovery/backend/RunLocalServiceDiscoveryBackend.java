@@ -7,7 +7,7 @@ public class RunLocalServiceDiscoveryBackend {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new ApplicationContext();
         applicationContext.registerWebSocketController(WhatsitServiceDiscoveryBackendWebsocketController.class);
-        applicationContext.registerController(WhatsitServiceDiscoveryBackendApiController.class);
+        applicationContext.registerController(WhatsitServiceDiscoveryWebUIController.class);
         ApplicationRunner applicationRunner = new ApplicationRunner(applicationContext);
         applicationRunner.run();
     }
